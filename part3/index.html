@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./static/main.js" defer></script>
+    <title>Homework</title>
+</head>
+<body>
+    <h2>JavaScript and the Document Object Model DOM</h2>
+    <h3>Part 3</h3>
+    <hr><br>
+
+    <div id="box" onclick="changeColor()">Click me to change color</div><br>
+
+    <button onclick="handleClick()">Click Me!!!</button><br><br>
+    
+    <div onmouseover="handleMouseOver()">Mouse over me</div>
+        
+    
+    <script>
+        function changeColor() {
+          var box = document.getElementById("box");
+          box.style.backgroundColor = "#aaa5ba";
+        }
+
+        function handleClick() {
+            alert("Congrats, you won!")
+        }
+
+        function handleMouseOver() {
+            alert("Hello!")
+        }
+
+    </script>
+
+
+        
+</body>
+</html>
